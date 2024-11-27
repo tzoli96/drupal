@@ -1,0 +1,70 @@
+services:
+  drupal-backend:
+    container_name: drupal_backend
+    build:
+      context: .
+      dockerfile: .docker/backend/Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/var/www/html
+    depends_on:
+      - postgres
+      - mailhog
+    ports:
+      - "${BACKEND_PORT}:80"
+    networks:
+      - drupal_network
+
+  postgres:
+    image: postgres:latest
+    container_name: drupal_postgres
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    networks:
+      - drupal_network
+
+  react-frontend:
+    container_name: react_frontend
+    build:
+      context: .
+      dockerfile: .docker/frontend/Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./frontend:/usr/src/app
+    ports:
+      - "${FRONTEND_PORT}:3000"
+    stdin_open: true
+    tty: true
+    networks:
+      - drupal_network
+
+  adminer:
+    image: adminer:latest
+    container_name: drupal_adminer
+    ports:
+      - "${ADMINER_PORT}:8080"
+    networks:
+      - drupal_network
+    depends_on:
+      - postgres
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: drupal_mailhog
+    ports:
+      - "${MAILHOG_PORT}:8025"
+    networks:
+      - drupal_network
+
+volumes:
+  postgres_data:
+
+networks:
+  drupal_network:
+    driver: bridge
