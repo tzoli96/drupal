@@ -1,0 +1,19 @@
+{
+  "name": "ckeditor5-tzsolutions",
+  "version": "1.0.0",
+  "description": "Provides components and plugins for the Drupal ckeditor5-tzsolutions module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dll:build": "webpack --config webpack.config.js"
+  },
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "ckeditor5": "^33.0.0",
+    "prettier": "^2.2.1",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^3.0.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

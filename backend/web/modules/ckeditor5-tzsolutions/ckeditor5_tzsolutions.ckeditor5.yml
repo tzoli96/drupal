@@ -1,0 +1,14 @@
+ckeditor5_tzsolutions_dynamicblock:
+  ckeditor5:
+    plugins:
+      - tzsolutions.DynamicBlock
+  drupal:
+    label: Layer cake
+    library: ckeditor5_tzsolutions/tzsolutions
+    admin_library: ckeditor5_tzsolutions/admin
+    toolbar_items:
+      DynamicBlock:
+          label: DynamicBlock
+    elements:
+      - <div class="layout__col">
+      - <section class="layout--two-col">

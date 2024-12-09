@@ -1,0 +1,8 @@
+name: CKEditor 5 TZSolutions
+type: module
+description: "Provides API Renderer and component plugins for CKEditor 5."
+package: CKEditor5
+core_version_requirement: ^11
+dependencies:
+  - drupal:editor
+  - ckeditor5:ckeditor5
