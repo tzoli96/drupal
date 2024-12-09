@@ -1,0 +1,78 @@
+@media (min-width: 480px) {
+  .layout--two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.layout__col {
+  padding: .5rem;
+}
+
+
+.simple-box {
+  padding: .5rem;
+  background: #e6eee0;
+  border-radius: 1rem;
+}
+
+h1.simple-box-title {
+  margin-top: .75rem;
+  margin-bottom: .25rem;
+}
+.simple-box-description {
+  background: #fff;
+  padding: 1rem 1rem 2rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.custom-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.custom-modal textarea {
+  width: 100%;
+  min-height: 80px;
+}
+
+.custom-modal button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.ck-form {
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ck-form button {
+  margin-right: 5px;
+}
+
+.placeholder-options {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
