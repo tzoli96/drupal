@@ -2683,7 +2683,7 @@
 /**
  * Declared in file @ckeditor/ckeditor5-typing/src/inserttextcommand.js
  *
- * @typedef {module:typing/inserttextcommand} module:typing/inserttextcommand~InsertTextCommand
+ * @typedef {module:typing/inserttextcommand} module:typing/inserttextcommand~Inserttextcommand
  */
 
 /**

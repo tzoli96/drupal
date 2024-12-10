@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Kör háttér -->
+  <circle cx="50" cy="50" r="48" fill="#4CAF50" stroke="#2E7D32" stroke-width="2" />
+
+  <!-- API felirat -->
+  <text x="50" y="57" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    API
+  </text>
+
+  <!-- Kisebb körök körülötte -->
+  <circle cx="15" cy="50" r="5" fill="#FFFFFF" />
+  <circle cx="85" cy="50" r="5" fill="#FFFFFF" />
+  <circle cx="50" cy="15" r="5" fill="#FFFFFF" />
+  <circle cx="50" cy="85" r="5" fill="#FFFFFF" />
+</svg>

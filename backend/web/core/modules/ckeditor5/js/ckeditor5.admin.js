@@ -921,6 +921,7 @@
    * @private
    */
   Drupal.theme.ckeditor5AvailableButtons = ({ buttons }) => {
+    console.log(buttons)
     return `
       <ul class="ckeditor5-toolbar-tray ckeditor5-toolbar-available__buttons" data-button-list="ckeditor5-toolbar-available-buttons" role="listbox" aria-orientation="horizontal" aria-labelledby="ckeditor5-toolbar-available-buttons-label">
         ${buttons

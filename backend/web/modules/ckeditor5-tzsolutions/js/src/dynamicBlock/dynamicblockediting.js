@@ -12,7 +12,6 @@ export default class DynamicBlockEditing extends Plugin {
     this._defineSchema();
     this._defineConverters();
 
-    // Az "insertText" parancs regisztrálása
     this.editor.commands.add('insertText', new InsertTextCommand(this.editor));
   }
 

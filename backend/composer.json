@@ -16,6 +16,9 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/ckeditor_accordion": "^2.2",
+        "drupal/ckeditor_html_embed": "^1.0",
+        "drupal/ckeditor_indentblock": "^1.1",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
